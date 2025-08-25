@@ -1,0 +1,11 @@
+﻿{
+  "SqlScript": {
+    "UId": "4eaa3939-f55f-3792-a3db-02e9fe04b5fd",
+    "Name": "DeleteBlueTrafficLightPostgresSQL",
+    "DBEngineType": 2,
+    "InstallType": 2,
+    "ModifiedOnUtc": "\/Date(1755823877000)\/",
+    "BackwardCompatibilityConfirmed": false,
+    "DependsOn": []
+  }
+}
