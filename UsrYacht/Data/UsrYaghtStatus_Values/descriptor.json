@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "77b3ff78-ec43-45c3-9af9-bc56c4e31613",
     "Name": "UsrYaghtStatus_Values",
-    "ModifiedOnUtc": "\/Date(1756159504000)\/",
+    "ModifiedOnUtc": "\/Date(1756177310000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "77b3ff78-ec43-45c3-9af9-bc56c4e31613",
@@ -15,6 +15,13 @@
         "IsKey": false,
         "ColumnName": "CreatedOn",
         "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "4ea8a427-1628-ec2d-b3bf-747b7ccb7e77",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrColor",
+        "DataTypeValueUId": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
       },
       {
         "ColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",

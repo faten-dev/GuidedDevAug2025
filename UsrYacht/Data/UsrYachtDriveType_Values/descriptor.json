@@ -2,20 +2,13 @@
   "Descriptor": {
     "UId": "68abd349-5830-4a73-b5a5-c0fc5b9ae29a",
     "Name": "UsrYachtDriveType_Values",
-    "ModifiedOnUtc": "\/Date(1756160645000)\/",
+    "ModifiedOnUtc": "\/Date(1756176921000)\/",
     "InstallType": 0,
     "Schema": {
       "UId": "68abd349-5830-4a73-b5a5-c0fc5b9ae29a",
       "Name": "UsrYachtDriveType"
     },
     "Columns": [
-      {
-        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
-        "IsForceUpdate": false,
-        "IsKey": false,
-        "ColumnName": "Name",
-        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
-      },
       {
         "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
         "IsForceUpdate": false,
@@ -31,11 +24,11 @@
         "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
       },
       {
-        "ColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
         "IsForceUpdate": false,
         "IsKey": false,
-        "ColumnName": "CreatedOn",
-        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
       },
       {
         "ColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
@@ -43,6 +36,27 @@
         "IsKey": false,
         "ColumnName": "ModifiedOn",
         "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "e86949e7-1ee6-4277-8e20-982a9c673fdb",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "RecordInactive",
+        "DataTypeValueUId": "90b65bf8-0ffc-4141-8779-2420877af907"
+      },
+      {
+        "ColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "CreatedOn",
+        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "0f698c10-1935-8918-6e68-ef1c74fc0906",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "UsrColor",
+        "DataTypeValueUId": "dafb71f9-ee9f-4e0b-a4d7-37aa15987155"
       }
     ]
   }
