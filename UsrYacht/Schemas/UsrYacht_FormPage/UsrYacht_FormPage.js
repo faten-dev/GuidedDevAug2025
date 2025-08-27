@@ -239,33 +239,6 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 			},
 			{
 				"operation": "insert",
-				"name": "YaghtStatus",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 1,
-						"rowSpan": 1
-					},
-					"type": "crt.ComboBox",
-					"label": "$Resources.Strings.PDS_UsrStatus_k6jj8vg",
-					"labelPosition": "auto",
-					"control": "$PDS_UsrStatus_k6jj8vg",
-					"listActions": [],
-					"showValueAsLink": false,
-					"controlActions": [],
-					"visible": true,
-					"readonly": false,
-					"placeholder": "",
-					"tooltip": "",
-					"valueDetails": null
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 0
-			},
-			{
-				"operation": "insert",
 				"name": "DriveType",
 				"values": {
 					"layoutConfig": {
@@ -289,7 +262,53 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "YaghtStatus",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 1,
+						"rowSpan": 1
+					},
+					"type": "crt.ComboBox",
+					"label": "$Resources.Strings.PDS_UsrStatus_k6jj8vg",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrStatus_k6jj8vg",
+					"listActions": [],
+					"showValueAsLink": false,
+					"controlActions": [],
+					"visible": true,
+					"readonly": false,
+					"placeholder": "",
+					"tooltip": "",
+					"valueDetails": null
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "Length",
+				"values": {
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 2,
+						"rowSpan": 1
+					},
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrLength_js7lxn7",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrLength_js7lxn7"
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 2
 			},
 			{
 				"operation": "insert",
@@ -316,26 +335,26 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 2
+				"index": 3
 			},
 			{
 				"operation": "insert",
-				"name": "Length",
+				"name": "CrewCount",
 				"values": {
+					"type": "crt.NumberInput",
+					"label": "$Resources.Strings.PDS_UsrCrewCount_xmeftbs",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrCrewCount_xmeftbs",
 					"layoutConfig": {
 						"column": 1,
 						"colSpan": 1,
-						"row": 2,
+						"row": 3,
 						"rowSpan": 1
-					},
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrLength_js7lxn7",
-					"labelPosition": "auto",
-					"control": "$PDS_UsrLength_js7lxn7"
+					}
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 3
+				"index": 4
 			},
 			{
 				"operation": "insert",
@@ -362,50 +381,7 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 4
-			},
-			{
-				"operation": "insert",
-				"name": "CrewCount",
-				"values": {
-					"type": "crt.NumberInput",
-					"label": "$Resources.Strings.PDS_UsrCrewCount_xmeftbs",
-					"labelPosition": "auto",
-					"control": "$PDS_UsrCrewCount_xmeftbs",
-					"layoutConfig": {
-						"column": 1,
-						"colSpan": 1,
-						"row": 3,
-						"rowSpan": 1
-					}
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
 				"index": 5
-			},
-			{
-				"operation": "insert",
-				"name": "Comment",
-				"values": {
-					"layoutConfig": {
-						"column": 2,
-						"colSpan": 1,
-						"row": 4,
-						"rowSpan": 1
-					},
-					"type": "crt.Input",
-					"label": "$Resources.Strings.PDS_UsrComment_j8nop8a",
-					"labelPosition": "auto",
-					"control": "$PDS_UsrComment_j8nop8a",
-					"multiline": false,
-					"visible": false,
-					"readonly": false,
-					"placeholder": "",
-					"tooltip": ""
-				},
-				"parentName": "GeneralInfoTabContainer",
-				"propertyName": "items",
-				"index": 6
 			},
 			{
 				"operation": "insert",
@@ -424,6 +400,30 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 				},
 				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
+				"name": "ManagerEmail",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 4,
+						"rowSpan": 1
+					},
+					"type": "crt.EmailInput",
+					"label": "$Resources.Strings.PDS_UsrManagerEmail_c9e1unl",
+					"control": "$PDS_UsrManagerEmail_c9e1unl",
+					"labelPosition": "auto",
+					"placeholder": "",
+					"tooltip": "",
+					"needHandleSave": false,
+					"caption": "#ResourceString(ManagerEmail_caption)#",
+					"readonly": true
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
 				"index": 7
 			},
 			{
@@ -437,11 +437,41 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"visible": false,
 					"readonly": true,
 					"placeholder": "",
+					"tooltip": "",
+					"layoutConfig": {
+						"column": 1,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					}
+				},
+				"parentName": "GeneralInfoTabContainer",
+				"propertyName": "items",
+				"index": 8
+			},
+			{
+				"operation": "insert",
+				"name": "Comment",
+				"values": {
+					"layoutConfig": {
+						"column": 2,
+						"colSpan": 1,
+						"row": 5,
+						"rowSpan": 1
+					},
+					"type": "crt.Input",
+					"label": "$Resources.Strings.PDS_UsrComment_j8nop8a",
+					"labelPosition": "auto",
+					"control": "$PDS_UsrComment_j8nop8a",
+					"multiline": false,
+					"visible": false,
+					"readonly": false,
+					"placeholder": "",
 					"tooltip": ""
 				},
-				"parentName": "GeneralInfoTab",
+				"parentName": "GeneralInfoTabContainer",
 				"propertyName": "items",
-				"index": 1
+				"index": 9
 			},
 			{
 				"operation": "insert",
@@ -493,6 +523,15 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS_UsrPrice_acca1nw": {
 						"modelConfig": {
 							"path": "PDS.UsrPrice"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 20,
+									"message": "#ResourceString(PriceCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrDriveType_bgwao75": {
@@ -508,16 +547,43 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS_UsrLength_js7lxn7": {
 						"modelConfig": {
 							"path": "PDS.UsrLength"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 3,
+									"message": "#ResourceString(LengthCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrCrewCount_xmeftbs": {
 						"modelConfig": {
 							"path": "PDS.UsrCrewCount"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 1,
+									"message": "#ResourceString(CrewCountCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrPassengersCount_xqw0dlr": {
 						"modelConfig": {
 							"path": "PDS.UsrPassengersCount"
+						},
+						"validators": {
+							"MySuperValidator": {
+								"type": "usr.DGValidator",
+								"params": {
+									"minValue": 2,
+									"message": "#ResourceString(PassengersCountCannotBeLess)#"
+								}
+							}
 						}
 					},
 					"PDS_UsrCaptain_y2jqjgy": {
@@ -554,6 +620,11 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 						"modelConfig": {
 							"path": "PDS.UsrTicketPrice"
 						}
+					},
+					"PDS_UsrManagerEmail_c9e1unl": {
+						"modelConfig": {
+							"path": "PDS.UsrManagerEmail_c9e1unl"
+						}
 					}
 				}
 			},
@@ -586,7 +657,13 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					"PDS": {
 						"type": "crt.EntityDataSource",
 						"config": {
-							"entitySchemaName": "UsrYacht"
+							"entitySchemaName": "UsrYacht",
+							"attributes": {
+								"UsrManagerEmail_c9e1unl": {
+									"path": "UsrManager.Email",
+									"type": "ForwardReference"
+								}
+							}
 						},
 						"scope": "page"
 					}
@@ -606,9 +683,58 @@ define("UsrYacht_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEM
 					/* Call the next handler if it exists and return its result. */
 					return next?.handle(request);
 				}
-			}
+			},
+			{
+				request: "crt.HandleViewModelAttributeChangeRequest",
+				/* The custom implementation of the system query handler. */
+				handler: async (request, next) => {
+      				if (request.attributeName === 'PDS_UsrPrice_acca1nw' || 		        // if price changed
+					   request.attributeName === 'PDS_UsrPassengersCount_xqw0dlr' ) { 		// or Passenger count changed
+						var price = await request.$context.PDS_UsrPrice_acca1nw;
+						var passengers = await request.$context.PDS_UsrPassengersCount_xqw0dlr;
+						var ticket_price = price / passengers;
+						request.$context.PDS_UsrTicketPrice_gdclybw = ticket_price;
+					}
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			},
+
 		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
-		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
+		validators: /**SCHEMA_VALIDATORS*/{
+			/* The validator type must contain a vendor prefix.
+			Format the validator type in PascalCase. */
+			"usr.DGValidator": {
+				validator: function (config) {
+					return function (control) {
+						let value = control.value;
+						let minValue = config.minValue;
+						let valueIsCorrect = value >= minValue;
+						var result;
+						if (valueIsCorrect) {
+							result = null;
+						} else {
+							result = {
+								"usr.DGValidator": { 
+									message: config.message
+								}
+							};
+						}
+						return result;
+					};
+				},
+				params: [
+					{
+						name: "minValue"
+					},
+					{
+						name: "message"
+					}
+				],
+				async: false
+			}
+
+		}/**SCHEMA_VALIDATORS*/
 	};
 });
